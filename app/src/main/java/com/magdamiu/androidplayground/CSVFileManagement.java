@@ -8,9 +8,9 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class CSVFileManagement {
-    public void createCSVFile(Context context) {
+    public void createCSVFile(Context context, String fileName) {
         File folder = new File(Environment.getExternalStorageDirectory()
-                + "/Folder");
+                + "/FolderCSV");
 
         boolean existsFolder = false;
         if (!folder.exists())
@@ -18,7 +18,7 @@ public class CSVFileManagement {
 
         System.out.println("" + existsFolder);
 
-        final String filename = folder.toString() + "/" + "Test.csv";
+        final String filename = folder.toString() + "/" + fileName;
 
         // show waiting screen
         CharSequence contentTitle = "A title...";

@@ -17,4 +17,9 @@
         android:layout_height="wrap_content"
         android:text="CSV file"
         android:onClick="csvFileOnClick"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attach file to mail"
+        android:onClick="attachFileOnMailOnClick"/>
 </LinearLayout>
